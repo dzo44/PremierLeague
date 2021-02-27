@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League</title>
+</head>
+<body>
+    <a href="Page02.html">Page 02</a>
+    <script>
+        document.body.onload = function () {  
+            let array = ["Arsenal","Chelsea","Liverpool","Munchester United","Everton","Tottenham Hotspur","Fulham","Leeds United","West Ham United"]
+            
+            if (sessionStorage.Items === undefined) {
+                sessionStorage.Items = JSON.stringify(array);
+                alert("Data stored")
+            }
+            else{
+                alert("Data already exists");
+            }
+        };
+    </script>
+</body>
+</html>
