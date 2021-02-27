@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PL Table</title>
-  <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .jumbotron{
+            padding: 2em;
+        }
+        
+    </style>
 </head>
 <body>
-    <div id="div1"></div>
-
+    <div class="container">
+        <div class="jumbotron">
+            <img src="/img/pl_icon.png" alt="" width="200"> &nbsp; 
+            <h1>Premier League</h1>
+        </div>
+    <div class="col-md-4">
+        <fieldset>
+            <legend>Table
+             <div id="div1"></div>
+            </legend>
+        </fieldset>
+    </div>
+   
+</div>
     <script>
         document.body.onload = function () {
             if (sessionStorage.Items !== undefined) {
